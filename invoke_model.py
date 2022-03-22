@@ -23,7 +23,7 @@ print(X_test)
 print(f"Shape of test set: {X_test.shape}")
 
 ## Predict by loading model from disk
-keras_model = mlflow.keras.load_model(f"tf-model")
+keras_model = mlflow.keras.load_model(f"model")
 keras_pred = keras_model.predict(X_test)
 print(keras_pred)
 
